@@ -12,14 +12,20 @@ function buildCommandInfo(commands) {
 
     stream.write(`# AWS SAM Cli generate event reference`)
 
+    stream.write(`\n\nAvailable services:\n`)
+
+    Object.keys(commands).forEach((serviceName) => {
+        stream.write(`\n- [${serviceName}](#${serviceName.toLowerCase().replace(' ', '-')})\n`)
+    })
+
     for (const [command, subcommands] of Object.entries(commands)) {
 
-        stream.write(`\n\n## Service: ${command}\n`);
+        stream.write(`\n\n# ${command}\n`);
 
         for (const [subcommand, subcommandsArguments] of Object.entries(subcommands)) {
 
             stream.write(`\n\`\`\`bash\nsam local generate-event ${command} ${subcommand}\n\`\`\``)
-            stream.write(`\n### ${subcommandsArguments.help}`)
+            stream.write(`\n${subcommandsArguments.help}`)
 
             if (Object.keys(subcommandsArguments.tags).length > 0) {
                 stream.write('\n\n#### Arguments:\n')

@@ -1,11 +1,56 @@
 # AWS SAM Cli generate event reference
 
-## Service: alexa-skills-kit
+Available services:
+
+- [alexa-skills-kit](#alexa-skills-kit)
+
+- [alexa-smart-home](#alexa-smart-home)
+
+- [apigateway](#apigateway)
+
+- [batch](#batch)
+
+- [cloudformation](#cloudformation)
+
+- [cloudfront](#cloudfront)
+
+- [codecommit](#codecommit)
+
+- [codepipeline](#codepipeline)
+
+- [cognito](#cognito)
+
+- [config](#config)
+
+- [connect](#connect)
+
+- [dynamodb](#dynamodb)
+
+- [cloudwatch](#cloudwatch)
+
+- [kinesis](#kinesis)
+
+- [lex](#lex)
+
+- [rekognition](#rekognition)
+
+- [s3](#s3)
+
+- [ses](#ses)
+
+- [sns](#sns)
+
+- [sqs](#sqs)
+
+- [stepfunctions](#stepfunctions)
+
+
+# alexa-skills-kit
 
 ```bash
 sam local generate-event alexa-skills-kit end-session
 ```
-### Generates an Amazon Alexa End Session Event
+Generates an Amazon Alexa End Session Event
 
 #### Arguments:
 
@@ -23,7 +68,7 @@ sam local generate-event alexa-skills-kit end-session
 ```bash
 sam local generate-event alexa-skills-kit intent-answer
 ```
-### Generates an Amazon Alexa Intent Answer Event
+Generates an Amazon Alexa Intent Answer Event
 
 #### Arguments:
 
@@ -41,7 +86,7 @@ sam local generate-event alexa-skills-kit intent-answer
 ```bash
 sam local generate-event alexa-skills-kit intent-getnewfact
 ```
-### Generates an Amazon Alexa Intent GetNewFact Event
+Generates an Amazon Alexa Intent GetNewFact Event
 
 #### Arguments:
 
@@ -59,7 +104,7 @@ sam local generate-event alexa-skills-kit intent-getnewfact
 ```bash
 sam local generate-event alexa-skills-kit intent-mycoloris
 ```
-### Generates an Amazon Alexa Intent MyColorIs Event
+Generates an Amazon Alexa Intent MyColorIs Event
 
 #### Arguments:
 
@@ -77,7 +122,7 @@ sam local generate-event alexa-skills-kit intent-mycoloris
 ```bash
 sam local generate-event alexa-skills-kit intent-recipe
 ```
-### Generates an Amazon Alexa Intent Recipe Event
+Generates an Amazon Alexa Intent Recipe Event
 
 #### Arguments:
 
@@ -95,7 +140,7 @@ sam local generate-event alexa-skills-kit intent-recipe
 ```bash
 sam local generate-event alexa-skills-kit start-session
 ```
-### Generates an Amazon Alexa Start Session Event
+Generates an Amazon Alexa Start Session Event
 
 #### Arguments:
 
@@ -111,33 +156,33 @@ sam local generate-event alexa-skills-kit start-session
 ***
 
 
-## Service: alexa-smart-home
+# alexa-smart-home
 
 ```bash
 sam local generate-event alexa-smart-home smart-home-control-turn-off-request
 ```
-### Generates an Amazon Alexa Smart Home Control Turn Off Request Event
+Generates an Amazon Alexa Smart Home Control Turn Off Request Event
 ***
 
 ```bash
 sam local generate-event alexa-smart-home smart-home-control-turn-on-request
 ```
-### Generates an Amazon Alexa Smart Home Control Turn On Request Event
+Generates an Amazon Alexa Smart Home Control Turn On Request Event
 ***
 
 ```bash
 sam local generate-event alexa-smart-home smart-home-discovery-request
 ```
-### Generates an Amazon Alexa Smart Home Discovery Request Event
+Generates an Amazon Alexa Smart Home Discovery Request Event
 ***
 
 
-## Service: apigateway
+# apigateway
 
 ```bash
 sam local generate-event apigateway authorizer
 ```
-### Generates an Amazon API Gateway Authorizer Event
+Generates an Amazon API Gateway Authorizer Event
 
 #### Arguments:
 
@@ -161,7 +206,7 @@ sam local generate-event apigateway authorizer
 ```bash
 sam local generate-event apigateway aws-proxy
 ```
-### Generates an Amazon API Gateway AWS Proxy Event
+Generates an Amazon API Gateway AWS Proxy Event
 
 #### Arguments:
 
@@ -183,27 +228,27 @@ sam local generate-event apigateway aws-proxy
 ***
 
 
-## Service: batch
+# batch
 
 ```bash
 sam local generate-event batch get-job
 ```
-### Generates an AWS Batch Get Job Event
+Generates an AWS Batch Get Job Event
 ***
 
 ```bash
 sam local generate-event batch submit-job
 ```
-### Generates an AWS Batch Submit Job Event
+Generates an AWS Batch Submit Job Event
 ***
 
 
-## Service: cloudformation
+# cloudformation
 
 ```bash
 sam local generate-event cloudformation create-request
 ```
-### Generates an AWS CloudFormation Create Request Event
+Generates an AWS CloudFormation Create Request Event
 
 #### Arguments:
 
@@ -219,12 +264,12 @@ sam local generate-event cloudformation create-request
 ***
 
 
-## Service: cloudfront
+# cloudfront
 
 ```bash
 sam local generate-event cloudfront ab-test
 ```
-### Generates an Amazon CloudFront A/B Test Event
+Generates an Amazon CloudFront A/B Test Event
 
 #### Arguments:
 
@@ -238,7 +283,7 @@ sam local generate-event cloudfront ab-test
 ```bash
 sam local generate-event cloudfront access-request-in-response
 ```
-### Generates an Amazon CloudFront Access Request in Response Event
+Generates an Amazon CloudFront Access Request in Response Event
 
 #### Arguments:
 
@@ -252,7 +297,7 @@ sam local generate-event cloudfront access-request-in-response
 ```bash
 sam local generate-event cloudfront http-redirect
 ```
-### Generates an Amazon CloudFront HTTP Redirect Event
+Generates an Amazon CloudFront HTTP Redirect Event
 
 #### Arguments:
 
@@ -266,7 +311,7 @@ sam local generate-event cloudfront http-redirect
 ```bash
 sam local generate-event cloudfront modify-querystring
 ```
-### Generates an Amazon CloudFront Modify QueryString Event
+Generates an Amazon CloudFront Modify QueryString Event
 
 #### Arguments:
 
@@ -280,13 +325,13 @@ sam local generate-event cloudfront modify-querystring
 ```bash
 sam local generate-event cloudfront modify-response-header
 ```
-### Generates an Amazon CloudFront Modify Response Header Event
+Generates an Amazon CloudFront Modify Response Header Event
 ***
 
 ```bash
 sam local generate-event cloudfront multiple-remote-calls-aggregate-response
 ```
-### Generates an Amazon CloudFront Multiple Remote Calls Aggregate Response Event
+Generates an Amazon CloudFront Multiple Remote Calls Aggregate Response Event
 
 #### Arguments:
 
@@ -300,7 +345,7 @@ sam local generate-event cloudfront multiple-remote-calls-aggregate-response
 ```bash
 sam local generate-event cloudfront normalize-querystring-to-improve-cache-hit
 ```
-### Generates an Amazon CloudFront Normalize Querystring Event
+Generates an Amazon CloudFront Normalize Querystring Event
 
 #### Arguments:
 
@@ -314,7 +359,7 @@ sam local generate-event cloudfront normalize-querystring-to-improve-cache-hit
 ```bash
 sam local generate-event cloudfront redirect-on-viewer-country
 ```
-### Generates an Amazon CloudFront Redirect on Viewer Country Event
+Generates an Amazon CloudFront Redirect on Viewer Country Event
 
 #### Arguments:
 
@@ -328,7 +373,7 @@ sam local generate-event cloudfront redirect-on-viewer-country
 ```bash
 sam local generate-event cloudfront redirect-unauthenticated-users
 ```
-### Generates an Amazon CloudFront Redirect Unauthenticated Users Event
+Generates an Amazon CloudFront Redirect Unauthenticated Users Event
 
 #### Arguments:
 
@@ -342,7 +387,7 @@ sam local generate-event cloudfront redirect-unauthenticated-users
 ```bash
 sam local generate-event cloudfront response-generation
 ```
-### Generates an Amazon CloudFront Response Generation Event
+Generates an Amazon CloudFront Response Generation Event
 
 #### Arguments:
 
@@ -356,7 +401,7 @@ sam local generate-event cloudfront response-generation
 ```bash
 sam local generate-event cloudfront serve-object-on-viewer-device
 ```
-### Generates an Amazon CloudFront Serve Object on Viewer Device Event
+Generates an Amazon CloudFront Serve Object on Viewer Device Event
 
 #### Arguments:
 
@@ -370,7 +415,7 @@ sam local generate-event cloudfront serve-object-on-viewer-device
 ```bash
 sam local generate-event cloudfront simple-remote-call
 ```
-### Generates an Amazon CloudFront Simple Remote Call Event
+Generates an Amazon CloudFront Simple Remote Call Event
 
 #### Arguments:
 
@@ -382,12 +427,12 @@ sam local generate-event cloudfront simple-remote-call
 ***
 
 
-## Service: codecommit
+# codecommit
 
 ```bash
 sam local generate-event codecommit repository
 ```
-### Generates an AWS CodeCommit Repository Event 
+Generates an AWS CodeCommit Repository Event 
 
 #### Arguments:
 
@@ -407,12 +452,12 @@ sam local generate-event codecommit repository
 ***
 
 
-## Service: codepipeline
+# codepipeline
 
 ```bash
 sam local generate-event codepipeline job
 ```
-### Generates an AWS CodePipeline Job Event
+Generates an AWS CodePipeline Job Event
 
 #### Arguments:
 
@@ -430,12 +475,12 @@ sam local generate-event codepipeline job
 ***
 
 
-## Service: cognito
+# cognito
 
 ```bash
 sam local generate-event cognito sync-trigger
 ```
-### Generates an Amazon Cognito Sync Trigger Event
+Generates an Amazon Cognito Sync Trigger Event
 
 #### Arguments:
 
@@ -445,12 +490,12 @@ sam local generate-event cognito sync-trigger
 ***
 
 
-## Service: config
+# config
 
 ```bash
 sam local generate-event config item-change-notification
 ```
-### Generates an AWS Config Configuration Item Change Notification Event
+Generates an AWS Config Configuration Item Change Notification Event
 
 #### Arguments:
 
@@ -466,7 +511,7 @@ sam local generate-event config item-change-notification
 ```bash
 sam local generate-event config oversized-item-change-notification
 ```
-### Generates an AWS Config Oversized Configuration Item Change Notification Event
+Generates an AWS Config Oversized Configuration Item Change Notification Event
 
 #### Arguments:
 
@@ -482,7 +527,7 @@ sam local generate-event config oversized-item-change-notification
 ```bash
 sam local generate-event config periodic-rule
 ```
-### Generates an AWS Config Periodic Rule Event
+Generates an AWS Config Periodic Rule Event
 
 #### Arguments:
 
@@ -496,12 +541,12 @@ sam local generate-event config periodic-rule
 ***
 
 
-## Service: connect
+# connect
 
 ```bash
 sam local generate-event connect contact-flow-event
 ```
-### Generates an Amazon Connect Contact Flow Event
+Generates an Amazon Connect Contact Flow Event
 
 #### Arguments:
 
@@ -519,12 +564,12 @@ sam local generate-event connect contact-flow-event
 ***
 
 
-## Service: dynamodb
+# dynamodb
 
 ```bash
 sam local generate-event dynamodb update
 ```
-### Generates an Amazon DynamoDB Update Event
+Generates an Amazon DynamoDB Update Event
 
 #### Arguments:
 
@@ -540,18 +585,18 @@ sam local generate-event dynamodb update
 ***
 
 
-## Service: cloudwatch
+# cloudwatch
 
 ```bash
 sam local generate-event cloudwatch logs
 ```
-### Generates an Amazon Cloudwatch Logs Event
+Generates an Amazon Cloudwatch Logs Event
 ***
 
 ```bash
 sam local generate-event cloudwatch scheduled-event
 ```
-### Generates an Amazon CloudWatch Events Scheduled Event
+Generates an Amazon CloudWatch Events Scheduled Event
 
 #### Arguments:
 
@@ -567,12 +612,12 @@ sam local generate-event cloudwatch scheduled-event
 ***
 
 
-## Service: kinesis
+# kinesis
 
 ```bash
 sam local generate-event kinesis get-records
 ```
-### Generates an Amazon Kinesis Data Stream Event
+Generates an Amazon Kinesis Data Stream Event
 
 #### Arguments:
 
@@ -592,7 +637,7 @@ sam local generate-event kinesis get-records
 ```bash
 sam local generate-event kinesis kinesis-firehose
 ```
-### Generates an Amazon Kinesis Data Firehose Event
+Generates an Amazon Kinesis Data Firehose Event
 
 #### Arguments:
 
@@ -608,7 +653,7 @@ sam local generate-event kinesis kinesis-firehose
 ```bash
 sam local generate-event kinesis analytics
 ```
-### Generates an Amazon Kinesis Data Analytics Event
+Generates an Amazon Kinesis Data Analytics Event
 
 #### Arguments:
 
@@ -630,7 +675,7 @@ sam local generate-event kinesis analytics
 ```bash
 sam local generate-event kinesis analytics-compressed
 ```
-### Generates an Amazon Kinesis Data Analytics Compressed Event
+Generates an Amazon Kinesis Data Analytics Compressed Event
 
 #### Arguments:
 
@@ -652,7 +697,7 @@ sam local generate-event kinesis analytics-compressed
 ```bash
 sam local generate-event kinesis analytics-dynamodb
 ```
-### Generates an Amazon Kinesis Data Analytics DynamoDB Event
+Generates an Amazon Kinesis Data Analytics DynamoDB Event
 
 #### Arguments:
 
@@ -674,7 +719,7 @@ sam local generate-event kinesis analytics-dynamodb
 ```bash
 sam local generate-event kinesis analytics-kpl
 ```
-### Generates an Amazon Kinesis Data Analytics KPL Event
+Generates an Amazon Kinesis Data Analytics KPL Event
 
 #### Arguments:
 
@@ -694,7 +739,7 @@ sam local generate-event kinesis analytics-kpl
 ```bash
 sam local generate-event kinesis apachelog
 ```
-### Generates an Amazon Kinesis Data Firehose Apachelog Event
+Generates an Amazon Kinesis Data Firehose Apachelog Event
 
 #### Arguments:
 
@@ -708,7 +753,7 @@ sam local generate-event kinesis apachelog
 ```bash
 sam local generate-event kinesis cloudwatch-logs-processor
 ```
-### Generates an Amazon Kinesis Data Firehose Cloudwatch Logs Processor Event
+Generates an Amazon Kinesis Data Firehose Cloudwatch Logs Processor Event
 
 #### Arguments:
 
@@ -724,7 +769,7 @@ sam local generate-event kinesis cloudwatch-logs-processor
 ```bash
 sam local generate-event kinesis streams-as-source
 ```
-### Generates an Amazon Kinesis Data Firehose Streams as Source Event
+Generates an Amazon Kinesis Data Firehose Streams as Source Event
 
 #### Arguments:
 
@@ -744,7 +789,7 @@ sam local generate-event kinesis streams-as-source
 ```bash
 sam local generate-event kinesis syslog
 ```
-### Generates an Amazon Kinesis Data Firehose Syslog Event
+Generates an Amazon Kinesis Data Firehose Syslog Event
 
 #### Arguments:
 
@@ -756,39 +801,39 @@ sam local generate-event kinesis syslog
 ***
 
 
-## Service: lex
+# lex
 
 ```bash
 sam local generate-event lex book-car
 ```
-### Generates an Amazon Lex Book Car Event
+Generates an Amazon Lex Book Car Event
 ***
 
 ```bash
 sam local generate-event lex book-hotel
 ```
-### Generates an Amazon Lex Book Hotel Event
+Generates an Amazon Lex Book Hotel Event
 ***
 
 ```bash
 sam local generate-event lex make-appointment
 ```
-### Generates an Amazon Lex Make Appointment Event
+Generates an Amazon Lex Make Appointment Event
 ***
 
 ```bash
 sam local generate-event lex order-flowers
 ```
-### Generates an Amazon Lex Order Flowers Event
+Generates an Amazon Lex Order Flowers Event
 ***
 
 
-## Service: rekognition
+# rekognition
 
 ```bash
 sam local generate-event rekognition s3-request
 ```
-### Generates an Amazon Rekognition S3 Request Event
+Generates an Amazon Rekognition S3 Request Event
 
 #### Arguments:
 
@@ -804,12 +849,12 @@ sam local generate-event rekognition s3-request
 ***
 
 
-## Service: s3
+# s3
 
 ```bash
 sam local generate-event s3 delete
 ```
-### Generates an Amazon S3 Delete Event
+Generates an Amazon S3 Delete Event
 
 #### Arguments:
 
@@ -827,7 +872,7 @@ sam local generate-event s3 delete
 ```bash
 sam local generate-event s3 put
 ```
-### Generates an Amazon S3 Put Event
+Generates an Amazon S3 Put Event
 
 #### Arguments:
 
@@ -843,12 +888,12 @@ sam local generate-event s3 put
 ***
 
 
-## Service: ses
+# ses
 
 ```bash
 sam local generate-event ses email-receiving
 ```
-### Generates an Amazon SES Email Receiving Event
+Generates an Amazon SES Email Receiving Event
 
 #### Arguments:
 
@@ -864,12 +909,12 @@ sam local generate-event ses email-receiving
 ***
 
 
-## Service: sns
+# sns
 
 ```bash
 sam local generate-event sns notification
 ```
-### Generates an Amazon SNS Topic Notification Event
+Generates an Amazon SNS Topic Notification Event
 
 #### Arguments:
 
@@ -889,12 +934,12 @@ sam local generate-event sns notification
 ***
 
 
-## Service: sqs
+# sqs
 
 ```bash
 sam local generate-event sqs receive-message
 ```
-### Generates an Amazon SQS Event
+Generates an Amazon SQS Event
 
 #### Arguments:
 
@@ -910,10 +955,10 @@ sam local generate-event sqs receive-message
 ***
 
 
-## Service: stepfunctions
+# stepfunctions
 
 ```bash
 sam local generate-event stepfunctions error
 ```
-### Generates an AWS StepFunctions Error Event
+Generates an AWS StepFunctions Error Event
 ***
