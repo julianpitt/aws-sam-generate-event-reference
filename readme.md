@@ -5,4 +5,5 @@ This repo will get the latest AWS SAM Cli command reference for the `sam local g
 
 
 To run yourself: `node build.js`
+
 View current output of this file: [AWS SAM Cli generate event reference](aws-sam-generate-event-command-reference.md)
