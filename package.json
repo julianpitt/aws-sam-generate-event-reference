@@ -1,0 +1,17 @@
+{
+  "name": "aws-sam-generate-event-reference",
+  "version": "1.0.0",
+  "description": "A reference repo for the AWS SAM Cli generate events cli",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AWS",
+    "SAM",
+    "Serverless",
+    "Cloud"
+  ],
+  "author": "Julian Pittas",
+  "license": "ISC"
+}
